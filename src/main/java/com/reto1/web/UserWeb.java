@@ -36,7 +36,7 @@ public class UserWeb {
      * @param user
      * @return user Retorna al usuario actualizado
      */
-    @PostMapping("save")
+    @PostMapping("new")
     @ResponseStatus(HttpStatus.CREATED)
     public User save(@RequestBody User user){
         return userApi.save(user);
